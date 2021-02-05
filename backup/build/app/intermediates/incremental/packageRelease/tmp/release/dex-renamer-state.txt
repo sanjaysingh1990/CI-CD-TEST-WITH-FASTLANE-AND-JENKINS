@@ -1,0 +1,4 @@
+#Fri Feb 05 15:50:26 IST 2021
+base.0=/Users/dev/Desktop/flutter projects/flutter_app_cicd/build/app/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
