@@ -1,2 +1,2 @@
-json_key_file("/Users/dev/Desktop/pc-api-7533031053019212831-477-92612aa31eee.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+json_key_file("../pc-api-7533031053019212831-477-92612aa31eee.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
 package_name("app.cpplayer.com.flutterappcicd") # e.g. com.krausefx.app
