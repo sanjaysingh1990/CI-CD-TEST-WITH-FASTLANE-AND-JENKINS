@@ -56,14 +56,8 @@ platform :android do
       }
     )
     supply(
-            version_code: 16,
-            version_name: "1.0.5",
-            apk_paths: "../build/app/outputs/apk/release/app-release.apk",
-            skip_upload_changelogs:false,
-            skip_upload_metadata:false,
-            skip_upload_images:false,
-            skip_upload_screenshots:false,
-
+             apk_paths: "../build/app/outputs/apk/release/app-release.apk",
+             version_code: 17
         )
     upload_to_play_store
 
