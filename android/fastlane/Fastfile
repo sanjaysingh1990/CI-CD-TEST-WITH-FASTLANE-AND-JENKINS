@@ -57,7 +57,7 @@ platform :android do
     )
     supply(
              apk_paths: "../build/app/outputs/apk/release/app-release.apk",
-             version_code: 25
+             skip_upload_changelogs: true
         )
     upload_to_play_store
 
