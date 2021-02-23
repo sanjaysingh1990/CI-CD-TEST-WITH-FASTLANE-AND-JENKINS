@@ -47,7 +47,7 @@ platform :android do
       print_command: false,
       properties: {
         versionCode" => 22,
-        #"versionName" => "1.0.4",
+        "versionName" => "1.0.8",
         "android.injected.signing.store.file" => "Untitled",
         "android.injected.signing.store.password" => "cicdtest",
         "android.injected.signing.key.alias" => "cicdtest",
