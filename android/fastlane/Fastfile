@@ -46,7 +46,7 @@ platform :android do
       build_type: "Release",
       print_command: false,
       properties: {
-        #"versionCode" => 4,
+        versionCode" => 22,
         #"versionName" => "1.0.4",
         "android.injected.signing.store.file" => "Untitled",
         "android.injected.signing.store.password" => "cicdtest",
@@ -57,8 +57,7 @@ platform :android do
     )
     supply(
              apk_paths: "../build/app/outputs/apk/release/app-release.apk",
-             skip_upload_changelogs: false,
-             version_code: versionCode
+             skip_upload_changelogs: true
         )
     upload_to_play_store
 
