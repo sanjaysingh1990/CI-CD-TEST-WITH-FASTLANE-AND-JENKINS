@@ -55,12 +55,13 @@ platform :android do
 
       }
     )
-    supply(
 
-             apk_paths: "../build/app/outputs/apk/release/app-release.apk",
-              version_code: 27
-        )
-    upload_to_play_store
+    upload_to_play_store(
+
+                                     apk_paths: "../build/app/outputs/apk/release/app-release.apk",
+                                     version_code: versionCode,
+                                     skip_upload_changelogs: true,
+                                )
 
    end
 
