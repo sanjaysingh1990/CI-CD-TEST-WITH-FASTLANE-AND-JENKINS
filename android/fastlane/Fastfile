@@ -46,7 +46,7 @@ platform :android do
       build_type: "Release",
       print_command: false,
       properties: {
-        versionCode" => 22,
+        "versionCode" => 22,
         "versionName" => "1.0.8",
         "android.injected.signing.store.file" => "Untitled",
         "android.injected.signing.store.password" => "cicdtest",
