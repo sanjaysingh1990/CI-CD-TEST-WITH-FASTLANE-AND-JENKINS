@@ -33,10 +33,10 @@ platform :android do
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     #gradle(task: "clean assembleRelease")
-          #path = "../app/build.gradle"
-          #re = /versionCode\s+(\d+)/
-          #s = File.read(path)
-          #versionCode = s[re, 1].to_i
+          path = "../app/build.gradle"
+          re = /versionCode\s+(\d+)/
+          s = File.read(path)
+          versionCode = s[re, 1].to_i
           #s[re, 1] = (versionCode + 1).to_s
           #f = File.new(path, 'w')
           #f.write(s)
@@ -57,9 +57,17 @@ platform :android do
     )
     supply(
              apk_paths: "../build/app/outputs/apk/release/app-release.apk",
-             version_code: 19
+             version_code: versionCode
         )
     upload_to_play_store
+    (
+          skip_upload_apk: false,
+          skip_upload_metadata: false,
+          skip_upload_images: true,
+          skip_upload_screenshots: true,
+          skip_upload_aab: false,
+          version_code: version_code
+        )
 
    end
 
